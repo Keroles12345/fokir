@@ -1,0 +1,310 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+}
+
+.fw-bold {
+    font-size: 60px;
+}
+
+.bg-light {
+    background-color: rgba(0, 0, 0, 0.74) !important;
+}
+
+.fs-2 {
+    color: white;
+}
+body:has(#about:target) .ABOUT::before,
+body:has(#SERVICES:target) .SERVICES::before,
+body:has(#Portfolio:target) .WORK::before,
+body:has(#BLOG:target) .BLOG::before,
+body:has(#contact:target) .CONTACT::before {
+    width: 100% !important;
+}
+.navbar-toggler-icon{
+    background-color: white;
+}
+.navbar-brand {
+    color: white !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    position: relative;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link::before {
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    transition: 0.5s ease-in-out;
+
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover::before {
+    width: 100%;
+}
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../iamge/hero-bg (1).jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about .about-me h2 {
+    position: relative;
+}
+.about .image img{
+    width: 140px;
+    height: 140px;
+}
+.about .about-me h2::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: rgb(0, 132, 255);
+    bottom: -10px;
+    left: 0;
+}
+.about-icons i{
+    transition: 0.5s ease-in-out;
+}
+.about-icons i:hover{
+    color: rgb(220, 53, 69);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+/*start Services*/
+.Services .text {
+    position: relative;
+}
+
+.Services .text::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background-color: rgb(0, 132, 255);
+    top: 120px;
+    left: 48%;
+}
+
+.Services .Services-box .box {
+    text-align: center;
+}
+
+
+.Services .Services-box .icons i {
+    font-size: 30px;
+    position: relative;
+    z-index: 1;
+    width: 90px;      
+    height: 90px;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;   
+    border-radius: 50%;
+}
+
+
+.Services .Services-box .icons i::after {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border: 7px solid rgb(0, 132, 255);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s ease-in-out;
+    z-index: -1;
+    text-align: center;
+    
+}
+
+.Services .Services-box .icons:hover i::after {
+    background-color: rgb(0, 132, 255);
+    border: 7px solid rgb(181, 181, 205);
+}
+
+.Services .Services-box .icons:hover i {
+    color: white;
+}
+
+
+/*end Services*/
+
+
+.section-box .section i {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    margin: 0 auto 15px;
+    color: white;
+    
+}
+
+.section-box .section i::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border: 7px solid rgba(214, 192, 192, 0.495);
+    border-radius: 50%;
+    
+}
+
+.section-box {
+    background-image:
+        linear-gradient(rgba(0, 123, 255, 0.68), rgba(0, 123, 255, 0.68)),
+        url(../iamge/counters-bg\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+
+}
+
+.Portfolio .Portfolio-box {
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 10px;
+
+}
+
+.Portfolio .Portfolio-box img {
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: auto;
+}
+
+.Portfolio .Portfolio-box:hover img {
+    transform: scale(1.2);
+}
+
+.Carousel .iamge img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.Carousel {
+    background-image: linear-gradient(rgba(0, 123, 255, 0.466), rgba(0, 123, 255, 0.466)), url(../iamge/overlay-bg\ \(1\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.blog .card-footer img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.blog .custom-card {
+    max-width: 25rem;
+}
+
+.blog .custom-card .card-body h5 {
+    transition: 0.7s ease-in-out;
+}
+
+.blog .custom-card .card-body:hover h5 {
+    color: #0078ff;
+}
+
+.blog .custom-card .card-footer .cars-man span {
+    transition: 0.7s ease-in-out;
+}
+
+.blog .custom-card .card-footer .cars-man:hover span {
+    color: #0078ff;
+}
+
+.contact .contant-box .contant-one h2 {
+    position: relative;
+}
+
+.contact .contant-box .contant-one h2::before {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 3px;
+    background-color: #0078ff;
+    top: 50px;
+
+}
+
+.contact .contant-box .contant-tow h2 {
+    position: relative;
+}
+
+.contact .contant-box .contant-tow h2::before {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 3px;
+    background-color: #0078ff;
+    top: 50px;
+}
+
+.contact .contant-box .contant-tow p {
+    line-height: 30px;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.contact {
+    background-image: linear-gradient(rgba(0, 123, 255, 0.731), rgba(0, 123, 255, 0.466)), url(../iamge/overlay-bg\ \(1\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact .contant-icons{
+    text-align: center;
+}
+.contact .contant-icons i{
+    transition: 0.5s ease-in-out;
+   
+}
+.contact .contant-icons i:hover{
+    color: rgb(220, 53, 69);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+
+
+
+footer {
+  margin-bottom: 0;
+  padding: 15px 0;
+  text-align: center;
+  background-color: #064895;
+  color: white;
+}
